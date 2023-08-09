@@ -1,0 +1,8 @@
+PREFIX dblp:<https://dblp.org/rdf/schema-2020-07-01#>
+PREFIX wdt:<http://www.wikidata.org/prop/direct/>
+
+SELECT ?year ?title ?input0 ?input1
+WHERE
+{
+    OPTIONAL { ?pub dblp:title ?title . }
+}

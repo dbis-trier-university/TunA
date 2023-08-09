@@ -1,0 +1,31 @@
+SELECT  ?doi ?title ?name ?input0 ?input1
+WHERE
+{
+    {
+        {
+            ?pub a <https://dblp.org/rdf/schema-2020-07-01#Publication> ;
+            <https://dblp.org/rdf/schema-2020-07-01#yearOfPublication>  ?year
+            OPTIONAL { ?pub  <http://www.wikidata.org/prop/direct/P356>  ?doi }
+        }
+        ?pub  <https://dblp.org/rdf/schema-2020-07-01#authoredBy>  ?author
+    }
+    {
+        {
+            OPTIONAL { ?pub  <https://dblp.org/rdf/schema-2020-07-01#title>  ?title }
+            ?pub  <https://dblp.org/rdf/schema-2020-07-01#publishedIn>  "Scientometrics"
+        }
+        UNION
+        {
+            OPTIONAL { ?pub  <https://dblp.org/rdf/schema-2020-07-01#title>  ?title }
+            ?pub  <https://dblp.org/rdf/schema-2020-07-01#publishedIn>  "IEEE Trans. Pattern Anal. Mach. Intell"
+        }
+    }
+UNION
+{
+    OPTIONAL { ?pub  <https://dblp.org/rdf/schema-2020-07-01#title>  ?title }
+    ?pub  <https://dblp.org/rdf/schema-2020-07-01#publishedIn>  "Theor. Comput. Sci."
+}
+OPTIONAL { ?pub  <http://www.wikidata.org/prop/direct/P818>  ?input0 }
+OPTIONAL { ?author  <http://www.wikidata.org/prop/direct/P496>  ?input1 }
+OPTIONAL { ?author  <https://dblp.org/rdf/schema-2020-07-01#primaryFullCreatorName>  ?name }
+}

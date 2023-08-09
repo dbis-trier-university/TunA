@@ -1,0 +1,6 @@
+year	title
+2019	A Systematic Comparison of Methods for Finding Good Premises for Claims.
+2018	Event2Vec: Neural Embeddings for News Events.
+2012	Index maintenance for time-travel text search.
+2011	Learning to rank under tight budget constraints.
+2008	Social recommendations at work.

@@ -1,0 +1,28 @@
+title	name
+Social recommendations at work.	Gerhard Weikum
+Social recommendations at work.	Ralf Schenkel
+Social recommendations at work.	Tom Crecelius
+Social recommendations at work.	Thomas Neumann
+Social recommendations at work.	Josiane Xavier Parreira
+Social recommendations at work.	Mouna Kacimi
+Social recommendations at work.	Sebastian Michel
+Index maintenance for time-travel text search.	Ralf Schenkel
+Index maintenance for time-travel text search.	Klaus Berberich
+Index maintenance for time-travel text search.	Srikanta J. Bedathur
+Index maintenance for time-travel text search.	Avishek Anand
+Fine-grained relevance feedback for XML retrieval.	Gerhard Weikum
+Fine-grained relevance feedback for XML retrieval.	Ralf Schenkel
+Retrieval evaluation on focused tasks.	Ralf Schenkel
+Proximity-aware scoring for XML retrieval.	Ralf Schenkel
+Proximity-aware scoring for XML retrieval.	Andreas Broschart
+Learning to rank under tight budget constraints.	Ralf Schenkel
+Learning to rank under tight budget constraints.	Christian Pölitz
+A novel hybrid index structure for efficient text retrieval.	Ralf Schenkel
+A novel hybrid index structure for efficient text retrieval.	Andreas Broschart
+Efficient and self-tuning incremental query expansion for top-k query processing.	Gerhard Weikum
+Efficient and self-tuning incremental query expansion for top-k query processing.	Ralf Schenkel
+Efficient and self-tuning incremental query expansion for top-k query processing.	Martin Theobald
+Event2Vec: Neural Embeddings for News Events.	Katja Hose
+Event2Vec: Neural Embeddings for News Events.	Vinay Setty
+A Systematic Comparison of Methods for Finding Good Premises for Claims.	Ralf Schenkel
+A Systematic Comparison of Methods for Finding Good Premises for Claims.	Lorik Dumani

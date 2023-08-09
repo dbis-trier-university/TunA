@@ -1,0 +1,41 @@
+{
+  "system": "FiLiPo",
+  "name": "sample_dblp_sample_crossref_filipo",
+  "meta": {
+    "database": "sample_dblp",
+    "api": "a24",
+    "inputType": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+    "inputRelation": "http://www.wikidata.org/prop/direct/P356",
+    "responseTime": 55,
+    "responseProbability": 0.90
+  },
+  "alignments": [
+    {
+      "reliability": 0.96,
+      "relation_path": [
+        {
+          "path": [
+            "https://dblp.org/rdf/schema-2020-07-01#title"
+          ]
+        }
+      ],
+      "api_path": [
+        "feed.entry.title"
+      ]
+    },
+    {
+
+      "reliability": 0.84,
+      "relation_path": [
+        {
+          "path": [
+            "https://dblp.org/rdf/schema-2020-07-01#yearOfPublication"
+          ]
+        }
+      ],
+      "api_path": [
+        "feed.entry.year"
+      ]
+    }
+  ]
+}

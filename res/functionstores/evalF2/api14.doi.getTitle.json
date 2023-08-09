@@ -1,0 +1,27 @@
+{
+  "system": "FiLiPo",
+  "name": "sample_dblp_sample_crossref_filipo",
+  "meta": {
+    "database": "sample_dblp",
+    "api": "a14",
+    "inputType": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+    "inputRelation": "http://www.wikidata.org/prop/direct/P356",
+    "responseTime": 310,
+    "responseProbability": 1.0
+  },
+  "alignments": [
+    {
+      "reliability": 0.92,
+      "relation_path": [
+        {
+          "path": [
+            "https://dblp.org/rdf/schema-2020-07-01#title"
+          ]
+        }
+      ],
+      "api_path": [
+        "feed.entry.title"
+      ]
+    }
+  ]
+}

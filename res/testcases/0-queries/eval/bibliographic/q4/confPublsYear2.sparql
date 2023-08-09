@@ -1,0 +1,11 @@
+PREFIX dblp:<https://dblp.org/rdf/schema-2020-07-01#>
+PREFIX wdt:<http://www.wikidata.org/prop/direct/>
+
+SELECT ?title
+WHERE
+{
+    ?pub a dblp:Publication .
+    ?pub dblp:publishedIn "CIKM" .
+    ?pub dblp:yearOfPublication "2014" .
+    ?pub dblp:title ?title .
+}

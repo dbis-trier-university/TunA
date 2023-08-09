@@ -1,0 +1,21 @@
+SELECT  ?title ?year ?input1 ?input0
+WHERE
+{
+    {
+        ?pub  a <https://dblp.org/rdf/schema-2020-07-01#Publication> .
+        OPTIONAL { ?pub <https://dblp.org/rdf/schema-2020-07-01#title>  ?title }
+        OPTIONAL { ?pub  <http://www.wikidata.org/prop/direct/P818>  ?input0 }
+        OPTIONAL { ?pub  <http://www.wikidata.org/prop/direct/P356>  ?input1 }
+        OPTIONAL { ?pub  <https://dblp.org/rdf/schema-2020-07-01#publicationYear>  ?year }
+        ?pub  <https://dblp.org/rdf/schema-2020-07-01#publishedIn>  "Scientometrics"
+    }
+    UNION
+    {
+        ?pub  a <https://dblp.org/rdf/schema-2020-07-01#Publication> .
+        OPTIONAL { ?pub <https://dblp.org/rdf/schema-2020-07-01#title>  ?title }
+        OPTIONAL { ?pub  <http://www.wikidata.org/prop/direct/P818>  ?input0 }
+        OPTIONAL { ?pub  <http://www.wikidata.org/prop/direct/P356>  ?input1 }
+        OPTIONAL { ?pub  <https://dblp.org/rdf/schema-2020-07-01#publicationYear>  ?year }
+        ?pub  <https://dblp.org/rdf/schema-2020-07-01#publishedIn>  "Theor. Comput. Sci."
+    }
+}

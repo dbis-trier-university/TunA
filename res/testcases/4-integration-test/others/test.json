@@ -1,0 +1,16 @@
+{
+  "feed": {
+    "entry": {
+      "title": "Event2Vec: Neural Embeddings for News Events.",
+      "author": [
+        {
+          "name": Katja Hose
+        },
+
+        {
+          "name": Vinay Setty
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+PREFIX dblp:<https://dblp.org/rdf/schema-2020-07-01#>
+PREFIX wdt:<http://www.wikidata.org/prop/direct/>
+
+SELECT ?title ?name ?year
+WHERE
+{
+    {
+        ?pub a dblp:Publication .
+        ?pub dblp:title ?title .
+        OPTIONAL{ ?pub dblp:publicationYear ?year .}
+        ?pub dblp:publishedIn "Scientometrics" .
+        ?pub dblp:authoredBy ?author .
+        ?author dblp:primaryFullCreatorName ?name .
+    }
+    UNION
+    {
+        ?pub a dblp:Publication .
+        ?pub dblp:title ?title .
+        OPTIONAL{ ?pub dblp:publicationYear ?year .}
+        ?pub dblp:publishedIn "Theor. Comput. Sci." .
+    }
+}
+

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-05-09T12:30:56.745816400Z</date>
+  <millis>1683635456745</millis>
+  <nanos>816400</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>Configuration.Configuration</class>
+  <method>createLogger</method>
+  <thread>1</thread>
+  <message>Creating logger object</message>
+</record>
+<record>
+  <date>2023-05-09T12:30:56.770606400Z</date>
+  <millis>1683635456770</millis>
+  <nanos>606400</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>FunctionStore.FunctionStore</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Loading function store</message>
+</record>
+<record>
+  <date>2023-05-09T12:30:57.304787100Z</date>
+  <millis>1683635457304</millis>
+  <nanos>787100</nanos>
+  <sequence>2</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>QueryManagement.Processor.TunableQueryProcessor</class>
+  <method>extendQuery</method>
+  <thread>1</thread>
+  <message>Remove subtractions, groupings, havings and orders</message>
+</record>
+<record>
+  <date>2023-05-09T12:30:57.327352900Z</date>
+  <millis>1683635457327</millis>
+  <nanos>352900</nanos>
+  <sequence>3</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>QueryManagement.Processor.TunableQueryProcessor</class>
+  <method>extendQuery</method>
+  <thread>1</thread>
+  <message>Extending original query by adding pre-conditions</message>
+</record>
+<record>
+  <date>2023-05-09T12:30:57.343887900Z</date>
+  <millis>1683635457343</millis>
+  <nanos>887900</nanos>
+  <sequence>4</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>QueryManagement.Processor.TunableQueryProcessor</class>
+  <method>extendQuery</method>
+  <thread>1</thread>
+  <message>Transform selected triples to optionals</message>
+</record>
+<record>
+  <date>2023-05-09T12:30:57.470917200Z</date>
+  <millis>1683635457470</millis>
+  <nanos>917200</nanos>
+  <sequence>5</sequence>
+  <logger>global</logger>
+  <level>FINER</level>
+  <class>QueryManagement.Processor.TunableQueryProcessor</class>
+  <method>queryAsList</method>
+  <thread>1</thread>
+  <message>Start querying:
+SELECT  ?title ?input0
+WHERE
+  { ?movie  a                     &lt;http://data.linkedmdb.org/resource/movie/film&gt; ;
+            &lt;http://data.linkedmdb.org/resource/movie/release_year&gt;  "2001"
+    OPTIONAL
+      { ?movie  &lt;http://purl.org/dc/terms/title&gt;  ?title }
+    OPTIONAL
+      { ?movie  &lt;http://data.linkedmdb.org/resource/movie/imdbid&gt;  ?input0 }
+  }
+</message>
+</record>
+<record>
+  <date>2023-05-09T12:30:57.863152300Z</date>
+  <millis>1683635457863</millis>
+  <nanos>152300</nanos>
+  <sequence>6</sequence>
+  <logger>global</logger>
+  <level>FINER</level>
+  <class>QueryManagement.Processor.TunableQueryProcessor</class>
+  <method>queryAsList</method>
+  <thread>1</thread>
+  <message>Querying was successful</message>
+</record>
+<record>
+  <date>2023-05-09T12:30:57.875669Z</date>
+  <millis>1683635457875</millis>
+  <nanos>669000</nanos>
+  <sequence>7</sequence>
+  <logger>global</logger>
+  <level>FINE</level>
+  <class>ServiceManagement.Optimizer.GoldStandard.GSOptimizer</class>
+  <method>identifyBestPlan</method>
+  <thread>1</thread>
+  <message>Create state chart</message>
+</record>
+<record>
+  <date>2023-05-09T12:30:57.878191700Z</date>
+  <millis>1683635457878</millis>
+  <nanos>191700</nanos>
+  <sequence>8</sequence>
+  <logger>global</logger>
+  <level>FINE</level>
+  <class>ServiceManagement.Plan.StateChart</class>
+  <method>createServiceStateChart</method>
+  <thread>1</thread>
+  <message>Start creating a state chart.</message>
+</record>
+<record>
+  <date>2023-05-09T12:30:57.879200900Z</date>
+  <millis>1683635457879</millis>
+  <nanos>200900</nanos>
+  <sequence>9</sequence>
+  <logger>global</logger>
+  <level>FINER</level>
+  <class>ServiceManagement.Plan.StateChart</class>
+  <method>createServiceStateChart</method>
+  <thread>1</thread>
+  <message>Identify gaps in the result table of the query.</message>
+</record>
+<record>
+  <date>2023-05-09T12:30:57.879200900Z</date>
+  <millis>1683635457879</millis>
+  <nanos>200900</nanos>
+  <sequence>10</sequence>
+  <logger>global</logger>
+  <level>FINER</level>
+  <class>ServiceManagement.Plan.StateChart</class>
+  <method>createServiceStateChart</method>
+  <thread>1</thread>
+  <message>Create API instantiations for all possible APIs</message>
+</record>
+<record>
+  <date>2023-05-09T12:30:57.891733500Z</date>
+  <millis>1683635457891</millis>
+  <nanos>733500</nanos>
+  <sequence>11</sequence>
+  <logger>global</logger>
+  <level>FINER</level>
+  <class>ServiceManagement.Plan.StateChart</class>
+  <method>createServiceStateChart</method>
+  <thread>1</thread>
+  <message>Remove all gaps with no service that can be called.</message>
+</record>
+<record>
+  <date>2023-05-09T12:30:57.898784100Z</date>
+  <millis>1683635457898</millis>
+  <nanos>784100</nanos>
+  <sequence>12</sequence>
+  <logger>global</logger>
+  <level>FINE</level>
+  <class>ServiceManagement.Optimizer.GoldStandard.GSOptimizer</class>
+  <method>identifyBestPlan</method>
+  <thread>1</thread>
+  <message>Done after 17ms.</message>
+</record>
+<record>
+  <date>2023-05-09T12:30:57.899786100Z</date>
+  <millis>1683635457899</millis>
+  <nanos>786100</nanos>
+  <sequence>13</sequence>
+  <logger>global</logger>
+  <level>FINE</level>
+  <class>ServiceManagement.Optimizer.GoldStandard.GSOptimizer</class>
+  <method>identifyBestPlan</method>
+  <thread>1</thread>
+  <message>Compute pareto solutions</message>
+</record>
+</log>

@@ -1,0 +1,3 @@
+year	title
+2018	Event2Vec: Neural Embeddings for News Events.
+2019	A Systematic Comparison of Methods for Finding Good Premises for Claims.

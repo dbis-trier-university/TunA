@@ -1,0 +1,11 @@
+PREFIX mdb:<http://data.linkedmdb.org/resource/movie/>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX purl:<http://purl.org/dc/terms/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?title
+WHERE
+{
+    <http://data.linkedmdb.org/resource/music_contributor/4614> mdb:contributed ?movie .
+    ?movie purl:title ?title .
+}

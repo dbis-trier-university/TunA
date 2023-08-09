@@ -1,0 +1,13 @@
+PREFIX dblp:<https://dblp.org/rdf/schema-2020-07-01#>
+PREFIX wdt:<http://www.wikidata.org/prop/direct/>
+
+SELECT DISTINCT ?title
+WHERE
+{
+    ?venue a dblp:Publication .
+    ?venue dblp:publishedBy "Springer" .
+    ?venue dblp:yearOfPublication "2015" .
+    ?pub a dblp:Publication .
+    ?pub dblp:publishedAsPartOf ?venue .
+    ?pub dblp:title ?title .
+}

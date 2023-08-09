@@ -1,0 +1,10 @@
+title
+Social recommendations at work.
+Fine-grained relevance feedback for XML retrieval.
+Retrieval evaluation on focused tasks.
+Proximity-aware scoring for XML retrieval.
+Learning to rank under tight budget constraints.
+A novel hybrid index structure for efficient text retrieval.
+Efficient and self-tuning incremental query expansion for top-k query processing.
+Event2Vec: Neural Embeddings for News Events.
+A Systematic Comparison of Methods for Finding Good Premises for Claims.

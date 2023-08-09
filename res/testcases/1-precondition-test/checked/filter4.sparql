@@ -1,0 +1,9 @@
+SELECT  ?venue ?title ?doi ?input0
+WHERE
+{
+    ?pub  a <https://dblp.org/rdf/schema-2020-07-01#Publication> ;
+    <https://dblp.org/rdf/schema-2020-07-01#title>  ?title ;
+    <https://dblp.org/rdf/schema-2020-07-01#publishedIn>  ?venue
+    OPTIONAL { ?pub  <http://www.wikidata.org/prop/direct/P818>  ?input0 }
+    OPTIONAL { ?pub  <http://www.wikidata.org/prop/direct/P356>  ?doi }
+}

@@ -1,0 +1,12 @@
+PREFIX dblp:<https://dblp.org/rdf/schema-2020-07-01#>
+PREFIX wdt:<http://www.wikidata.org/prop/direct/>
+
+SELECT ?title ?name
+WHERE
+{
+    <https://dblp.org/rec/conf/sigir/CreceliusKMNPSW08> a dblp:Publication .
+    <https://dblp.org/rec/conf/sigir/CreceliusKMNPSW08> dblp:title ?title .
+    <https://dblp.org/rec/conf/sigir/CreceliusKMNPSW08> dblp:authoredBy ?author .
+    ?author a dblp:Person .
+    ?author dblp:primaryFullCreatorName ?name .
+}

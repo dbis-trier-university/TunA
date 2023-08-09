@@ -1,0 +1,27 @@
+PREFIX dblp:<https://dblp.org/rdf/schema-2020-07-01#>
+PREFIX wdt:<http://www.wikidata.org/prop/direct/>
+
+SELECT ?doi ?arxivId ?title ?input0
+WHERE
+{
+    {
+        ?pub a dblp:Publication .
+        ?pub dblp:publishedIn "Scientometrics" .
+        OPTIONAL { ?pub wdt:P356 ?doi . }
+        OPTIONAL { ?pub  wdt:P818  ?arxivId . }
+        OPTIONAL { ?pub dblp:title ?title . }
+    }
+    UNION
+    {
+        ?pub a dblp:Publication .
+        ?pub dblp:publishedIn "Theor. Comput. Sci." .
+        ?pub dblp:authoredBy ?author .
+        ?author a dblp:Person .
+        ?author dblp:primaryFullCreatorName ?name .
+        OPTIONAL { ?pub wdt:P356 ?doi . }
+        OPTIONAL { ?pub dblp:title ?title . }
+        OPTIONAL { ?pub  wdt:P818  ?arxivId . }
+        OPTIONAL { ?author  wdt:P496  ?input0 }
+    }
+}
+

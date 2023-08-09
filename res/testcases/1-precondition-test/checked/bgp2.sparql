@@ -1,0 +1,12 @@
+PREFIX dblp:<https://dblp.org/rdf/schema-2020-07-01#>
+PREFIX wdt:<http://www.wikidata.org/prop/direct/>
+
+SELECT ?doi ?arxivId ?title
+WHERE
+{
+    ?pub a dblp:Publication .
+    ?pub dblp:title ?title .
+    ?pub wdt:P356 ?doi .
+    ?pub wdt:P818 ?arxivId .
+    ?pub dblp:yearOfPublication "2019" .
+}

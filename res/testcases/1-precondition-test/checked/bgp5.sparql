@@ -1,0 +1,12 @@
+PREFIX dblp:<https://dblp.org/rdf/schema-2020-07-01#>
+PREFIX wdt:<http://www.wikidata.org/prop/direct/>
+
+SELECT ?doi ?title ?year ?input0
+WHERE
+{
+    <https://dblp.org/rec/journals/scientometrics/Cavacini15a> wdt:P356 ?doi .
+    <https://dblp.org/rec/journals/scientometrics/Cavacini15a> dblp:title ?title .
+    <https://dblp.org/rec/journals/scientometrics/Cavacini15a> dblp:yearOfPublication ?year .
+    OPTIONAL { <https://dblp.org/rec/journals/scientometrics/Cavacini15a> wdt:P818 ?input0 . }
+}
+

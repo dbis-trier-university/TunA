@@ -1,0 +1,27 @@
+{
+  "system": "FiLiPo",
+  "name": "sample_dblp_sample_test_filipo",
+  "meta": {
+    "database": "sample_dblp",
+    "api": "a40",
+    "inputType": "https://dblp.org/rdf/schema-2020-07-01#Person",
+    "inputRelation": "http://www.wikidata.org/prop/direct/P2456",
+    "responseTime": 130,
+    "responseProbability": 1.00
+  },
+  "alignments": [
+    {
+      "reliability": 0.99,
+      "relation_path": [
+        {
+          "path": [
+            "https://dblp.org/rdf/schema-2020-07-01#primaryFullCreatorName"
+          ]
+        }
+      ],
+      "api_path": [
+        "feed.entry.name"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+SELECT  ?name ?venue
+WHERE
+{
+    {
+        {
+            ?pub a <https://dblp.org/rdf/schema-2020-07-01#Publication>
+            OPTIONAL { ?pub  <https://dblp.org/rdf/schema-2020-07-01#publishedIn>  ?venue }
+        }
+        ?pub  <https://dblp.org/rdf/schema-2020-07-01#authoredBy>  ?author
+    }
+    ?author  <https://dblp.org/rdf/schema-2020-07-01#primaryFullCreatorName>  ?name
+}

@@ -1,0 +1,11 @@
+PREFIX dblp:<https://dblp.org/rdf/schema-2020-07-01#>
+PREFIX wdt:<http://www.wikidata.org/prop/direct/>
+
+SELECT DISTINCT ?name
+WHERE
+{
+    ?pub a dblp:Publication .
+    ?pub dblp:authoredBy <https://dblp.org/pid/79/3711> .
+    ?pub dblp:authoredBy ?author .
+    ?author dblp:primaryFullCreatorName ?name .
+}

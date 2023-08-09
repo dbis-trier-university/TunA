@@ -1,0 +1,14 @@
+PREFIX dblp:<https://dblp.org/rdf/schema-2020-07-01#>
+PREFIX wdt:<http://www.wikidata.org/prop/direct/>
+
+SELECT ?year (COUNT(?title) as ?no)
+WHERE
+{
+    ?pub a dblp:Publication .
+    ?pub dblp:title ?title .
+    ?pub dblp:yearOfPublication ?year .
+    ?pub dblp:authoredBy ?author .
+    ?author dblp:primaryFullCreatorName "Katja Hose" .
+}
+GROUP BY ?year ?no
+ORDER BY DESC(?no)

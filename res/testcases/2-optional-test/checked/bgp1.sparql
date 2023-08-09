@@ -1,0 +1,9 @@
+SELECT  ?title ?input1 ?input0
+WHERE
+{
+    ?pub  a <https://dblp.org/rdf/schema-2020-07-01#Publication> ;
+    <https://dblp.org/rdf/schema-2020-07-01#yearOfPublication>  "2019"
+    OPTIONAL { ?pub  <https://dblp.org/rdf/schema-2020-07-01#title>  ?title }
+    OPTIONAL { ?pub  <http://www.wikidata.org/prop/direct/P818>  ?input0 }
+    OPTIONAL { ?pub  <http://www.wikidata.org/prop/direct/P356>  ?input1 }
+}

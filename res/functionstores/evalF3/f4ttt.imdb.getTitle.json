@@ -1,0 +1,27 @@
+{
+  "system": "FiLiPo",
+  "name": "sample_lmdb_tmdb",
+  "meta": {
+    "database": "sample_lmdb",
+    "api": "f4ttt",
+    "inputType": "http://data.linkedmdb.org/resource/movie/film",
+    "inputRelation": "http://data.linkedmdb.org/resource/movie/imdbid",
+    "responseTime": 510,
+    "responseProbability": 0.90
+  },
+  "alignments": [
+    {
+      "reliability": 0.60,
+      "relation_path": [
+        {
+          "path": [
+            "http://purl.org/dc/terms/title"
+          ]
+        }
+      ],
+      "api_path": [
+        "movie.title"
+      ]
+    }
+  ]
+}

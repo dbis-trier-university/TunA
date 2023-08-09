@@ -1,0 +1,2 @@
+year	title
+2018	Event2Vec: Neural Embeddings for News Events.

@@ -1,0 +1,305 @@
+year	name	no
+1999	Gerhard Weikum	2
+1999	Norbert Weißenberg	1
+1999	Xuequn Wu	1
+2000	Gerhard Weikum	1
+2003	Gerhard Weikum	2
+2003	Martin Theobald	2
+2004	Frank Mücklich	1
+2004	Gerhard Weikum	4
+2004	Ioana Manolescu	1
+2004	Jens Graupmann	1
+2004	Kai-Uwe Sattler	2
+2004	Kathrin Roberts	1
+2004	Katja Hose	2
+2004	Marcel Karnstedt	2
+2004	Marco Mesiti	1
+2004	Martin Theobald	2
+2004	Minos N. Garofalakis	1
+2004	Vasilis Vassalos	1
+2005	Daniel Zinn	1
+2005	Ernst-August Stehr	1
+2005	Gerhard Weikum	4
+2005	Jens Graupmann	1
+2005	Kai-Uwe Sattler	2
+2005	Katja Hose	3
+2005	Marcel Karnstedt	2
+2005	Martin Theobald	3
+2006	Andreas Broschart	1
+2006	Andreas Job	1
+2006	Christian Lemke	1
+2006	Daniel Klan	1
+2006	Gerhard Weikum	3
+2006	Jens Graupmann	1
+2006	Kai-Uwe Sattler	3
+2006	Katja Hose	3
+2006	Marcel Karnstedt	1
+2006	Martin Theobald	3
+2007	Andreas Broschart	2
+2007	Christian Lemke	2
+2007	Daniel Zinn	1
+2007	Gerhard Weikum	3
+2007	Gjergji Kasneci	1
+2007	Jana Quasebarth	1
+2007	Kai-Uwe Sattler	2
+2007	Katja Hose	3
+2007	Martin Theobald	3
+2008	Andreas Broschart	3
+2008	Daniel Klan	1
+2008	Gerhard Weikum	6
+2008	Jana Quasebarth	1
+2008	Josiane Xavier Parreira	2
+2008	Kai-Uwe Sattler	1
+2008	Katja Hose	2
+2008	Martin Theobald	4
+2008	Matthias Bender	2
+2008	Matthias Marx	1
+2008	Mouna Kacimi	3
+2008	Sebastian Michel	4
+2008	Thomas Neumann	4
+2008	Tom Crecelius	3
+2009	Alan Woodley	1
+2009	Antoine Doucet	1
+2009	Arjen P. de Vries	1
+2009	Chen Li	1
+2009	Christian Lemke	1
+2009	Daniel Klan	1
+2009	Francis Gropengießer	1
+2009	Gabriella Kazai	1
+2009	Gerhard Weikum	3
+2009	Gianluca Demartini	1
+2009	Haggai Roitman	1
+2009	Jaap Kamps	2
+2009	James A. Thom	1
+2009	Jianhan Zhu	1
+2009	Kai-Uwe Sattler	3
+2009	Katja Hose	3
+2009	Ludovic Denoyer	1
+2009	Marcin Sydow	1
+2009	Marijn Koolen	1
+2009	Martin Theobald	2
+2009	Matthias Bender	1
+2009	Maya Ramanath	1
+2009	Michal Shmueli-Scheuer	1
+2009	Monica Landoni	1
+2009	Ragnar Nordlie	1
+2009	Sebastian Michel	1
+2009	Shady Elbassuoni	1
+2009	Shlomo Geva	2
+2009	Tereza Iofciu	1
+2009	Thomas Neumann	1
+2009	Wei Che Huang	1
+2009	Yosi Mass	1
+2010	Adam Siemion	1
+2010	Andreas Broschart	1
+2010	Andreas Harth	1
+2010	Antoine Doucet	1
+2010	Arjen P. de Vries	1
+2010	Avishek Anand	1
+2010	Axel Polleres	1
+2010	Christopher M. De Vries	1
+2010	Daniel Klan	1
+2010	Eric SanJuan	1
+2010	Gabriella Kazai	1
+2010	Gerhard Weikum	2
+2010	Gianluca Demartini	1
+2010	Jaap Kamps	3
+2010	James A. Thom	1
+2010	Jussi Karlgren	1
+2010	Jürgen Umbrich	1
+2010	Kai-Uwe Sattler	2
+2010	Katja Hose	2
+2010	Klaus Berberich	2
+2010	Ludovic Denoyer	1
+2010	Marcel Karnstedt	2
+2010	Marcin Sydow	1
+2010	Marijn Koolen	1
+2010	Mariusz Pikula	1
+2010	Martin Theobald	2
+2010	Maya Ramanath	1
+2010	Monica Landoni	1
+2010	Norbert Fuhr	1
+2010	Omar Alonso	1
+2010	Patrice Bellot	1
+2010	Ragnar Nordlie	1
+2010	Richi Nayak	1
+2010	Sangeetha Kutty	1
+2010	Sebastian Michel	1
+2010	Shady Elbassuoni	1
+2010	Shlomo Geva	2
+2010	Srikanta J. Bedathur	2
+2010	Steffen Metzger	1
+2010	Tereza Iofciu	1
+2010	Thomas Beckers	1
+2010	Wei Chi Huang	1
+2010	Xavier Tannier	1
+2011	Andrea Tagarelli	1
+2011	Andreas Broschart	1
+2011	Antoine Doucet	1
+2011	Avishek Anand	1
+2011	Christopher M. De Vries	1
+2011	Daniel Klan	1
+2011	David Alexander	1
+2011	Eric SanJuan	1
+2011	Gabriella Kazai	1
+2011	Gerhard Weikum	1
+2011	Jaap Kamps	2
+2011	James A. Thom	1
+2011	Jussi Karlgren	1
+2011	Kai-Uwe Sattler	1
+2011	Katja Hose	8
+2011	Klaus Berberich	1
+2011	Liz Ribe	1
+2011	Marcel Karnstedt	1
+2011	Marcin Sydow	1
+2011	Marijn Koolen	1
+2011	Mariusz Pikula	1
+2011	Martin Theobald	1
+2011	Monica Landoni	1
+2011	Norbert Fuhr	1
+2011	Patrice Bellot	1
+2011	Ragnar Nordlie	1
+2011	Richi Nayak	1
+2011	Sangeetha Kutty	1
+2011	Shady Elbassuoni	1
+2011	Shlomo Geva	1
+2011	Srikanta J. Bedathur	1
+2011	Steffen Metzger	4
+2011	Thomas Beckers	1
+2011	Timothy Chappell	1
+2011	Xavier Tannier	1
+2012	Akrivi Vlachou	2
+2012	Andreas Broschart	1
+2012	Arjen P. de Vries	1
+2012	Daniel M. Herzig	1
+2012	Francis Gropengießer	1
+2012	Haggai Roitman	1
+2012	Heiko Betz	1
+2012	Katja Hose	8
+2012	Luis Galárraga	1
+2012	Pavel Serdyukov	1
+2012	Peter Mika	1
+2012	Steffen Metzger	2
+2013	Antoine Doucet	2
+2013	Christina Teflioudi	1
+2013	Eric SanJuan	2
+2013	Gabriella Kazai	2
+2013	Gerard de Melo	1
+2013	Jaap Kamps	2
+2013	Josiane Mothe	2
+2013	Katja Hose	3
+2013	Luis Galárraga	1
+2013	Marcin Sydow	2
+2013	Marijn Koolen	2
+2013	Mariusz Pikula	1
+2013	Mark Sanderson	1
+2013	Martin Theobald	2
+2013	Matthew Trappett	2
+2013	Michael Preminger	2
+2013	Patrice Bellot	2
+2013	Shlomo Geva	2
+2013	Xavier Tannier	2
+2014	Dilshod Ibragimov	1
+2014	Esteban Zimányi	1
+2014	Katja Hose	4
+2014	Kim Ahlstrøm Jakobsen	1
+2014	Luis Galárraga	1
+2014	Marcin Sydow	1
+2014	Nurefsan Gür	1
+2014	Steffen Metzger	1
+2014	Torben Bach Pedersen	3
+2015	Christina Teflioudi	1
+2015	Dilshod Ibragimov	1
+2015	Esteban Zimányi	2
+2015	Gerard de Melo	2
+2015	Grzegorz Sobczak	1
+2015	Jacobo Rouces	2
+2015	Katja Hose	9
+2015	Kim Ahlstrøm Jakobsen	1
+2015	Laurynas Siksnys	2
+2015	Luis Galárraga	1
+2015	Marcin Sydow	1
+2015	Mateusz Chochól	1
+2015	Nurefsan Gür	1
+2015	Rudra Pratap Deb Nath	1
+2015	Torben Bach Pedersen	6
+2016	Alberto Abelló	2
+2016	Dilshod Ibragimov	1
+2016	Esteban Zimányi	1
+2016	Gerard de Melo	3
+2016	Grzegorz Sobczak	1
+2016	Jacobo Rouces	3
+2016	Katja Hose	7
+2016	Kim Ahlstrøm Jakobsen	1
+2016	Krzysztof Mioduszewski	1
+2016	Laurynas Siksnys	1
+2016	Marcin Sydow	1
+2016	Torben Bach Pedersen	3
+2017	Christopher Michels	1
+2017	Emanuel Sallinger	1
+2017	Gabriela Montoya	1
+2017	Gerard de Melo	1
+2017	Hala Skaf-Molli	1
+2017	Jacobo Rouces	1
+2017	Katja Hose	5
+2017	Luis Galárraga	1
+2017	Marcin Sydow	1
+2017	Michael Ley	1
+2017	Nurefsan Gür	1
+2017	Oscar Romero	1
+2017	Rudra Pratap Deb Nath	1
+2017	Simon Razniewski	1
+2017	Steffen Metzger	1
+2017	Torben Bach Pedersen	1
+2018	Christopher Michels	1
+2018	Esteban Zimányi	1
+2018	Gabriela Montoya	3
+2018	Gerard de Melo	1
+2018	Jacobo Rouces	1
+2018	Katja Hose	6
+2018	Kim Ahlstrøm Jakobsen	1
+2018	Lorik Dumani	1
+2018	Luis Galárraga	1
+2018	Mandy Neumann	1
+2018	Martin Theobald	1
+2018	Nurefsan Gür	1
+2018	Philipp Schaer	1
+2018	Ralph Bergmann	1
+2018	Sebastian Michel	1
+2018	Torben Bach Pedersen	2
+2018	Vinay Setty	2
+2019	Christin Kreutz	3
+2019	Christos Tryfonopoulos	1
+2019	Eric SanJuan	1
+2019	Gabriela Montoya	5
+2019	Gonenc Ercan	1
+2019	Ilkcan Keles	2
+2019	Jaap Kamps	1
+2019	Kashif Rabbani	1
+2019	Katja Hose	9
+2019	Lefteris Zervakis	1
+2019	Lorik Dumani	1
+2019	Marijn Koolen	1
+2019	Michael Wolz	2
+2019	Oscar Romero	1
+2019	Shady Elbassuoni	1
+2019	Shlomo Geva	1
+2019	Shumet Tadesse	1
+2019	Toine Bogers	1
+2019	Tomer Sagi	1
+2019	Vinay Setty	1
+2020	Christopher Coors	1
+2020	Christos Tryfonopoulos	1
+2020	Katja Hose	5
+2020	Lefteris Zervakis	1
+2020	Lorik Dumani	1
+2020	Mikael Midtgaard	1
+2020	Mirko Lenz	1
+2020	Nurefsan Gür	1
+2020	Oscar Romero	2
+2020	Premtim Sahitaj	1
+2020	Ralph Bergmann	1
+2020	Rudra Pratap Deb Nath	2
+2020	Sean Kallenberg	1
+2020	Torben Bach Pedersen	3
+2020	Vinay Setty	1

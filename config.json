@@ -1,0 +1,897 @@
+{
+  "functionstore": "res/functionstores/",
+  "secrets": "secrets.json",
+  "logging": {
+    "path": "res/logfiles/",
+    "level": "all",
+    "console": false
+  },
+  "databases": [
+    {
+      "label": "checked",
+      "index": "C:\\Databases\\sample_dbs\\dblp_with_gaps\\tdb",
+      "source": "C:\\Databases\\sample_dbs\\dblp_with_gaps\\dblp_with_gaps.nt"
+    },
+    {
+      "label": "checked2",
+      "index": "C:\\Databases\\sample_dbs\\dblp_with_gaps\\tdb",
+      "source": "C:\\Databases\\sample_dbs\\dblp_with_gaps\\dblp_with_gaps.nt"
+    },
+    {
+      "label": "testing",
+      "index": "C:\\Databases\\sample_dbs\\hose_schenkel_gaps\\tdb",
+      "source": "C:\\Databases\\sample_dbs\\hose_schenkel_gaps\\hose_schenkel_gaps.nt"
+    },
+    {
+      "label": "sample_dblp_gaps",
+      "index": "C:\\Databases\\sample_dbs\\dblp_with_gaps\\tdb",
+      "source": "C:\\Databases\\sample_dbs\\dblp_with_gaps\\dblp_with_gaps.nt"
+    },
+    {
+      "label": "sample_dblp",
+      "index": "C:\\Databases\\sample_dbs\\dblp\\tdb",
+      "source": "C:\\Databases\\sample_dbs\\dblp\\dblp.nt"
+    },
+    {
+      "label": "hose_schenkel",
+      "index": "C:\\Databases\\sample_dbs\\hose_schenkel\\tdb",
+      "source": "C:\\Databases\\sample_dbs\\hose_schenkel\\hose_schenkel.nt"
+    },
+    {
+      "label": "hose_schenkel_gaps",
+      "index": "C:\\Databases\\sample_dbs\\hose_schenkel_gaps\\tdb",
+      "source": "C:\\Databases\\sample_dbs\\hose_schenkel_gaps\\hose_schenkel_with_gaps.nt"
+    },
+    {
+      "label": "lmdb",
+      "index": "C:\\Databases\\linkedmdb\\tdb",
+      "source": "C:\\Databases\\linkedmdb\\moviedb.nt"
+    },
+    {
+      "label": "sample_lmdb_gaps",
+      "index": "C:\\Databases\\sample_dbs\\movies\\lmdb_with_gaps\\tdb",
+      "source": "C:\\Databases\\sample_dbs\\movies\\lmdb_with_gaps\\lmdb_gaps.nt"
+    }
+  ],
+  "apis": [
+    {
+      "name": "Fake API 0",
+      "format": "json",
+      "label": "a0",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Person",
+          "relation": "http://www.wikidata.org/prop/direct/P496"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a0/work?orcid={q}"
+    },
+    {
+      "name": "Fake API 1",
+      "format": "json",
+      "label": "a1",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Person",
+          "relation": "http://www.wikidata.org/prop/direct/P496"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a1/work?orcid={q}"
+    },
+    {
+      "name": "Fake API 2",
+      "format": "json",
+      "label": "a2",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Person",
+          "relation": "http://www.wikidata.org/prop/direct/P496"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a2/work?orcid={q}"
+    },
+    {
+      "name": "Fake API 3",
+      "format": "json",
+      "label": "a3",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Person",
+          "relation": "http://www.wikidata.org/prop/direct/P496"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a3/work?orcid={q}"
+    },
+    {
+      "name": "Fake API 4",
+      "format": "json",
+      "label": "a4",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Person",
+          "relation": "http://www.wikidata.org/prop/direct/P496"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a4/work?orcid={q}"
+    },
+    {
+      "name": "Fake API 4 (Tainted)",
+      "format": "json",
+      "label": "a4t",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Person",
+          "relation": "http://www.wikidata.org/prop/direct/P496"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a4t/work?orcid={q}"
+    },
+    {
+      "name": "Fake API 5",
+      "format": "json",
+      "label": "a5",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a5/work?doi={q}"
+    },
+    {
+      "name": "Fake API 6",
+      "format": "json",
+      "label": "a6",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a6/work?doi={q}"
+    },
+    {
+      "name": "Fake API 7",
+      "format": "json",
+      "label": "a7",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a7/work?doi={q}"
+    },
+    {
+      "name": "Fake API 8",
+      "format": "json",
+      "label": "a8",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P818"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a8/work?doi={q}"
+    },
+    {
+      "name": "Fake API 9",
+      "format": "json",
+      "label": "a9",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P818"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a9/work?doi={q}"
+    },
+    {
+      "name": "Fake API 10",
+      "format": "json",
+      "label": "a10",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a10/work?doi={q}"
+    },
+    {
+      "name": "Fake API 11",
+      "format": "json",
+      "label": "a11",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a11/work?doi={q}"
+    },
+    {
+      "name": "Fake API 12",
+      "format": "json",
+      "label": "a12",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a12/work?doi={q}"
+    },
+    {
+      "name": "Fake API 13",
+      "format": "json",
+      "label": "a13",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a13/work?doi={q}"
+    },
+    {
+      "name": "Fake API 14",
+      "format": "json",
+      "label": "a14",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a14/work?doi={q}"
+    },
+    {
+      "name": "Fake API 14 (Tainted)",
+      "format": "json",
+      "label": "a14t",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a14t/work?doi={q}"
+    },
+    {
+      "name": "Fake API 14 (Tainted)",
+      "format": "json",
+      "label": "a14tt",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a14tt/work?doi={q}"
+    },
+    {
+      "name": "Fake API 15",
+      "format": "json",
+      "label": "a15",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P818"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a15/work?arxiv={q}"
+    },
+    {
+      "name": "Fake API 16",
+      "format": "json",
+      "label": "a16",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P818"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a16/work?arxiv={q}"
+    },
+    {
+      "name": "Fake API 17",
+      "format": "json",
+      "label": "a17",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P818"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a17/work?arxiv={q}"
+    },
+    {
+      "name": "Fake API 18",
+      "format": "json",
+      "label": "a18",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P818"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a18/work?arxiv={q}"
+    },
+    {
+      "name": "Fake API 19",
+      "format": "json",
+      "label": "a19",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P818"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a19/work?arxiv={q}"
+    },
+    {
+      "name": "Fake API 19 (Tainted)",
+      "format": "json",
+      "label": "a19t",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P818"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a19t/work?arxiv={q}"
+    },
+    {
+      "name": "Fake API 20",
+      "format": "json",
+      "label": "a20",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a20/work?doi={q}"
+    },
+    {
+      "name": "Fake API 21",
+      "format": "json",
+      "label": "a21",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a21/work?doi={q}"
+    },
+    {
+      "name": "Fake API 22",
+      "format": "json",
+      "label": "a22",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a22/work?doi={q}"
+    },
+    {
+      "name": "Fake API 23",
+      "format": "json",
+      "label": "a23",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a23/work?doi={q}"
+    },
+    {
+      "name": "Fake API 24",
+      "format": "json",
+      "label": "a24",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a24/work?doi={q}"
+    },
+    {
+      "name": "Fake API 24 (Tainted)",
+      "format": "json",
+      "label": "a24t",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P356"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a24t/work?doi={q}"
+    },
+    {
+      "name": "Fake API 25",
+      "format": "json",
+      "label": "a25",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P818"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a25/work?arxiv={q}"
+    },
+    {
+      "name": "Fake API 26",
+      "format": "json",
+      "label": "a26",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P818"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a26/work?arxiv={q}"
+    },
+    {
+      "name": "Fake API 27",
+      "format": "json",
+      "label": "a27",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P818"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a27/work?arxiv={q}"
+    },
+    {
+      "name": "Fake API 28",
+      "format": "json",
+      "label": "a28",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P818"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a28/work?arxiv={q}"
+    },
+    {
+      "name": "Fake API 29",
+      "format": "json",
+      "label": "a29",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P818"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a29/work?arxiv={q}"
+    },
+    {
+      "name": "Fake API 29 (Tainted)",
+      "format": "json",
+      "label": "a29t",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+          "relation": "http://www.wikidata.org/prop/direct/P818"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a29t/work?arxiv={q}"
+    },
+    {
+      "name": "Fake API 40",
+      "format": "json",
+      "label": "a40",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Person",
+          "relation": "http://www.wikidata.org/prop/direct/P2456"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a40/work?dblpId={q}"
+    },
+    {
+      "name": "Fake API 41",
+      "format": "json",
+      "label": "a41",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Person",
+          "relation": "http://www.wikidata.org/prop/direct/P2456"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a41/work?dblpId={q}"
+    },
+    {
+      "name": "Fake API 42",
+      "format": "json",
+      "label": "a42",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Person",
+          "relation": "http://www.wikidata.org/prop/direct/P2456"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a42/work?dblpId={q}"
+    },
+    {
+      "name": "Fake API 43",
+      "format": "json",
+      "label": "a43",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Person",
+          "relation": "http://www.wikidata.org/prop/direct/P2456"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a43/work?dblpId={q}"
+    },
+    {
+      "name": "Fake API 44",
+      "format": "json",
+      "label": "a44",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Person",
+          "relation": "http://www.wikidata.org/prop/direct/P2456"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a44/work?dblpId={q}"
+    },
+    {
+      "name": "Fake API 44 (Tainted)",
+      "format": "json",
+      "label": "a44t",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "https://dblp.org/rdf/schema-2020-07-01#Person",
+          "relation": "http://www.wikidata.org/prop/direct/P2456"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/a44t/work?dblpId={q}"
+    },
+    {
+      "name": "Fake Movie API 0",
+      "format": "json",
+      "label": "f0",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "http://data.linkedmdb.org/resource/movie/film",
+          "relation": "http://data.linkedmdb.org/resource/movie/imdbid"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/f0/movie?imdbid={q}"
+    },
+    {
+      "name": "Fake Movie API 1",
+      "format": "json",
+      "label": "f1",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "http://data.linkedmdb.org/resource/movie/film",
+          "relation": "http://data.linkedmdb.org/resource/movie/imdbid"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/f1/movie?imdbid={q}"
+    },
+    {
+      "name": "Fake Movie API 2",
+      "format": "json",
+      "label": "f2",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "http://data.linkedmdb.org/resource/movie/film",
+          "relation": "http://data.linkedmdb.org/resource/movie/imdbid"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/f2/movie?imdbid={q}"
+    },
+    {
+      "name": "Fake Movie API 3",
+      "format": "json",
+      "label": "f3",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "http://data.linkedmdb.org/resource/movie/film",
+          "relation": "http://data.linkedmdb.org/resource/movie/imdbid"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/f3/movie?imdbid={q}"
+    },
+    {
+      "name": "Fake Movie API 4",
+      "format": "json",
+      "label": "f4",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "http://data.linkedmdb.org/resource/movie/film",
+          "relation": "http://data.linkedmdb.org/resource/movie/imdbid"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/f4/movie?imdbid={q}"
+    },
+    {
+      "name": "Fake Movie API 4 (Tainted)",
+      "format": "json",
+      "label": "f4t",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "http://data.linkedmdb.org/resource/movie/film",
+          "relation": "http://data.linkedmdb.org/resource/movie/imdbid"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/f4t/movie?imdbid={q}"
+    },
+    {
+      "name": "Fake Movie API 4 (Tainted Version 2)",
+      "format": "json",
+      "label": "f4tt",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "http://data.linkedmdb.org/resource/movie/film",
+          "relation": "http://data.linkedmdb.org/resource/movie/imdbid"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/f4tt/movie?imdbid={q}"
+    },
+    {
+      "name": "Fake Movie API 4 (Tainted Version 3)",
+      "format": "json",
+      "label": "f4ttt",
+      "timeout": 500,
+      "parameters": [
+        {
+          "name": "q",
+          "type": "http://data.linkedmdb.org/resource/movie/film",
+          "relation": "http://data.linkedmdb.org/resource/movie/imdbid"
+        }
+      ],
+      "url": "http://localhost:8080/webservices/f4ttt/movie?imdbid={q}"
+    }
+  ],
+  "testing": {
+    "preconditions": [
+        {
+          "label": "checked",
+          "querypath": "res/testcases/0-queries/preconditions/checked/",
+          "resultpath": "res/testcases/1-precondition-test/checked/",
+          "database": "sample_dblp",
+          "functions": "res/functionstores/preConditionFederation/",
+          "processor": "RoundRobin"
+        },
+        {
+          "label": "testing",
+          "querypath": "res/testcases/0-queries/preconditions/testing/",
+          "resultpath": "res/testcases/1-precondition-test/testing/",
+          "database": "sample_dblp",
+          "functions": "res/functionstores/preConditionFederation/",
+          "processor": "RoundRobin"
+        }
+      ],
+    "optionals": [
+      {
+        "label": "checked",
+        "querypath": "res/testcases/0-queries/preconditions/checked/",
+        "resultpath": "res/testcases/2-optional-test/checked/",
+        "database": "sample_dblp",
+        "functions": "res/functionstores/preConditionFederation/",
+        "processor": "RoundRobin"
+      },
+      {
+        "label": "testing",
+        "querypath": "res/testcases/0-queries/preconditions/others/",
+        "resultpath": "res/testcases/2-optional-test/checked/",
+        "database": "sample_dblp",
+        "functions": "res/functionstores/preConditionFederation/",
+        "processor": "RoundRobin"
+      }
+    ],
+    "serviceplans": [
+      {
+        "label": "checked",
+        "querypath": "res/testcases/0-queries/serviceplans/checked/",
+        "resultpath": "res/testcases/3-result-test/checked/",
+        "database": "sample_dblp",
+        "functions": "res/functionstores/federation2/",
+        "processor": "RoundRobin",
+        "usersettings": {
+          "execTime": 800,
+          "coverage": 0.7,
+          "reliability": 0.8
+        }
+      },
+      {
+        "label": "largeFederation",
+        "querypath": "res/testcases/0-queries/serviceplans/testing/",
+        "resultpath": "res/testcases/3-plan-test/testing/",
+        "database": "checked",
+        "functions": "res/functionstores/largeFederation/",
+        "processor": "RoundRobin",
+        "usersettings": [
+          {
+            "label": "Time",
+            "value": 3500.0
+          },
+          {
+            "label": "Coverage",
+            "value": 0.8
+          },
+          {
+            "label": "Reliability",
+            "value": 0.7
+          }
+        ]
+      }
+    ],
+    "integrations": [
+      {
+        "label": "mediumFederation",
+        "querypath": "res/testcases/0-queries/integrations/testing/",
+        "resultpath": "res/testcases/4-integration-test/testing/",
+        "database": "checked",
+        "functions": "res/functionstores/mediumFederation/",
+        "processor": "RoundRobin",
+        "usersettings": [
+          {
+            "label": "Time",
+            "value": 4000.0
+          },
+          {
+            "label": "Coverage",
+            "value": 0.8
+          },
+          {
+            "label": "Reliability",
+            "value": 0.7
+          }
+        ]
+      },
+      {
+        "label": "trustedFederation",
+        "querypath": "res/testcases/0-queries/integrations/testing/",
+        "resultpath": "res/testcases/4-integration-test/testing/",
+        "database": "testing",
+        "functions": "res/functionstores/trustedFederation/",
+        "processor": "RoundRobin",
+        "usersettings": [
+          {
+            "label": "Time",
+            "value": 3500.0
+          },
+          {
+            "label": "Coverage",
+            "value": 0.8
+          },
+          {
+            "label": "Reliability",
+            "value": 0.65
+          }
+        ]
+      },
+      {
+        "label": "angieTrusted",
+        "querypath": "res/testcases/0-queries/integrations/angie/",
+        "resultpath": "res/testcases/4-integration-test/angie/",
+        "database": "testing",
+        "functions": "res/functionstores/trustedFederation/",
+        "processor": "ANGIE",
+        "usersettings": [
+          {
+            "label": "Time",
+            "value": 2500.0
+          },
+          {
+            "label": "Calls",
+            "value": 200
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+year	title
+2019	A Systematic Comparison of Methods for Finding Good Premises for Claims.
+2018	Event2Vec: Neural Embeddings for News Events.
+2012	Index maintenance for time-travel text search.
+2012	Retrieval evaluation on focused tasks.
+2011	A novel hybrid index structure for efficient text retrieval.
+2011	Learning to rank under tight budget constraints.
+2008	Fine-grained relevance feedback for XML retrieval.
+2008	Proximity-aware scoring for XML retrieval.
+2008	Social recommendations at work.
+2005	Efficient and self-tuning incremental query expansion for top-k query processing.

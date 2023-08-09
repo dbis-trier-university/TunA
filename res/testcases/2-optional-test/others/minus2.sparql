@@ -1,0 +1,13 @@
+PREFIX dblp:<https://dblp.org/rdf/schema-2020-07-01#>
+PREFIX wdt:<http://www.wikidata.org/prop/direct/>
+
+SELECT ?name ?venue ?input0 ?input1
+WHERE
+{
+    ?pub a dblp:Publication .
+    OPTIONAL { ?pub dblp:publishedIn ?venue . }
+    ?pub dblp:authoredBy ?author .
+    OPTIONAL { ?pub wdt:P818 ?input0 . }
+    OPTIONAL { ?author wdt:P496 ?input1 . }
+    OPTIONAL { ?author dblp:primaryFullCreatorName ?name . }
+}

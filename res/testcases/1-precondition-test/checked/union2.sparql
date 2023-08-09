@@ -1,0 +1,19 @@
+SELECT  ?doi ?arxivId ?title
+WHERE
+{
+    {
+        ?pub  a <https://dblp.org/rdf/schema-2020-07-01#Publication> ;
+        <http://www.wikidata.org/prop/direct/P818>  ?arxivId ;
+        <https://dblp.org/rdf/schema-2020-07-01#title>  ?title ;
+        <https://dblp.org/rdf/schema-2020-07-01#publishedIn>  "Scientometrics"
+        OPTIONAL { ?pub  <http://www.wikidata.org/prop/direct/P356>  ?doi }
+    }
+    UNION
+    {
+        ?pub  a <https://dblp.org/rdf/schema-2020-07-01#Publication> ;
+        <http://www.wikidata.org/prop/direct/P356>  ?doi ;
+        <https://dblp.org/rdf/schema-2020-07-01#title>  ?title ;
+        <https://dblp.org/rdf/schema-2020-07-01#publishedIn>  "Theor. Comput. Sci."
+        OPTIONAL { ?pub  <http://www.wikidata.org/prop/direct/P818>  ?arxivId }
+    }
+}

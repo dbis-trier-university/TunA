@@ -1,0 +1,6 @@
+title
+Social recommendations at work.
+Index maintenance for time-travel text search.
+Fine-grained relevance feedback for XML retrieval.
+Retrieval evaluation on focused tasks.
+Proximity-aware scoring for XML retrieval.

@@ -1,0 +1,12 @@
+PREFIX dblp:<https://dblp.org/rdf/schema-2020-07-01#>
+PREFIX wdt:<http://www.wikidata.org/prop/direct/>
+
+SELECT ?year ?title ?input1 ?input0
+WHERE {
+    ?pub a dblp:Publication .
+    ?pub dblp:publishedIn "SIGIR" .
+    OPTIONAL { ?pub dblp:title ?title . }
+    OPTIONAL { ?pub dblp:yearOfPublication ?year . }
+    OPTIONAL { ?pub wdt:P818 ?input0 . }
+    OPTIONAL { ?pub wdt:P356 ?input1 . }
+}
