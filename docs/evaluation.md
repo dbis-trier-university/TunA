@@ -67,3 +67,7 @@ Figure 9 and 10 present the results of our last experiment. We used the same con
 | ![real_calls](https://github.com/dbis-trier-university/TunA/assets/4719393/3ae51afc-17a9-4623-96ae-1ba8c5b1b7f9) |
 |:--:| 
 | **Figure 10:** Number of Calls |
+
+Figure 9 shows the execution time of the computed plans im comparison to the number of gaps contained in the query result. Not very surprisingly, the runtime tends to increase with the number of gaps. However, it is important to note that the main reason for the high runtime, especially for the later queries, is not only determined by the number of gaps, but also by the user preferences. As shown in the previous experiments, a coverage or reliability of more than 0.9 leads to an increased number of necessary queries.
+
+Figure 10 clearly shows that for almost all queries the number of calls is almost three times higher than the number of gaps. This is due to the fact that each of the three Web APIs must be queried due to the required coverage of 1.0. All Web APIs have a response probability greater than 0.9 but less than 1.0, so it is quite realistic that a gap in the result table will not be filled. This would mean that the required coverage would not be met.
