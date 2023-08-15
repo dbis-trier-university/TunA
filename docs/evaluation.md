@@ -59,3 +59,11 @@ Figure 8 shows the execution time of the computed plans. Since the queries are b
 
 ## Fourth Experiment: Using Real World Web APIs
 To be done
+
+|  |
+|:--:| 
+| **Figure 9:** Execution Time |
+
+|  |
+|:--:| 
+| **Figure 10:** Number of Calls |
