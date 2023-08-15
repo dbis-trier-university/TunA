@@ -58,12 +58,12 @@ Both ANGIE and TunA were able to deliver the required coverage. However, Figure 
 Figure 8 shows the execution time of the computed plans. Since the queries are built in such a way that the result tables get increasingly larger, it is no surprise that the runtime increases. Figure 8 shows that for smaller queries the runtime of both systems is nearly the same. Only for queries with large result tables ANGIE can show its strength in terms of execution time. A disadvantage of this approach is the significantly larger amount of erroneous data in the results table and that in most cases the desired reliability can not be achieved. If the results from the first experiment are taken into account, it is clear that TunA cannot be executed much faster, since this results in more erroneous data.
 
 ## Fourth Experiment: Using Real World Web APIs
-To be done
+Figure 9 and 10 present the results of our last experiment. We used the same configurations as in the third experiment to retrieve a full coverage with a reliability of 0.9. We executed a total of 25 queries against dblp using as function definitions the Web APIs of CrossRef, Springer Nature and Semantic Scholar. The aim was to evaluate how TunA performs for different queries in a real world szenario. As in the previous expermiment, the amount of missing information increases with each query.
 
-|  |
+| ![real_time](https://github.com/dbis-trier-university/TunA/assets/4719393/ac2c24a7-1da1-4f34-979f-13539741a29f) |
 |:--:| 
 | **Figure 9:** Execution Time |
 
-|  |
+| ![real_calls](https://github.com/dbis-trier-university/TunA/assets/4719393/3ae51afc-17a9-4623-96ae-1ba8c5b1b7f9) |
 |:--:| 
 | **Figure 10:** Number of Calls |
