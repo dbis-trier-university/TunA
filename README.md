@@ -8,4 +8,4 @@ TunA is a query optimizer that is able to combine RESTful Web APIs and RDF KBs i
 ## Content
 * [Quick Start](https://github.com/dbis-trier-university/TunA/blob/master/docs/quick-start.md)
 * [Evaluation Results](https://github.com/dbis-trier-university/TunA/blob/master/docs/evaluation.md)
-* [Download Datasets](https://github.com/dbis-trier-university/TunA/blob/master/docs/downloads.md)
+* [Download Datasets](https://tinyurl.com/TunA-Data)
